@@ -6,7 +6,7 @@ const PostCreate = () => {
 
   const onsubmit = async (event) => {
     event.preventDefault();
-    await axios.post('http://localhost:4000/post', {
+    await axios.post('http://posts.com/posts/create', {
       title,
     });
 
@@ -16,16 +16,16 @@ const PostCreate = () => {
   return (
     <div>
       <form onSubmit={onsubmit}>
-        <div className='form-group'>
+        <div className="form-group">
           <label>Title</label>
           <input
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            type='text'
-            className='form-control'
+            type="text"
+            className="form-control"
           />
         </div>
-        <button className='btn btn-primary'>Submit</button>
+        <button className="btn btn-primary">Submit</button>
       </form>
     </div>
   );
