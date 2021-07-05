@@ -4,11 +4,11 @@ import PostList from './post-list';
 
 const App = () => {
   return (
-    <div className='container'>
+    <div className="container">
       <h1>Post Create</h1>
       <PostCreate />
       <hr />
-      <h1>Posts</h1>
+      <h1>Posts made by you</h1>
       <PostList />
     </div>
   );
